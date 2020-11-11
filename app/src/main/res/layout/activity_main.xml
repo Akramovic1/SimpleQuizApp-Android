@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fede2b">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="376dp"
+        android:layout_height="277dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/quiz" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="398dp"
+        android:layout_height="393dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/q1"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1-Which animals appear in the Chinese zodiac?" />
+
+
+            <CheckBox
+                android:id="@+id/q1a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dragon" />
+
+            <CheckBox
+                android:id="@+id/q1a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dog" />
+
+            <CheckBox
+                android:id="@+id/q1a3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hummingbird" />
+
+            <CheckBox
+                android:id="@+id/q1a4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rabbit" />
+
+            <TextView
+                android:id="@+id/q2"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2-Stockholm is the capital of what country?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/q2q1"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Germany" />
+
+                <RadioButton
+                    android:id="@+id/q2a2"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sweden " />
+
+                <RadioButton
+                    android:id="@+id/q2a3"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="France" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q3"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3-How many rings appear on the Olympic flag?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/q3a1"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5" />
+
+                <RadioButton
+                    android:id="@+id/q3a2"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/q3a3"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q4"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4-What is the general name for a group of wolves?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/q4a1"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A flock" />
+
+                <RadioButton
+                    android:id="@+id/q4a2"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A pack" />
+
+                <RadioButton
+                    android:id="@+id/q4a3"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A herd" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q5"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5-Where would you find the Taj Mahal?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/q5a1"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="India" />
+
+                <RadioButton
+                    android:id="@+id/q5a2"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="France" />
+
+                <RadioButton
+                    android:id="@+id/q5a3"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Greece" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q6"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6-What is the world's smallest ocean?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/q6a1"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pacific Ocean" />
+
+                <RadioButton
+                    android:id="@+id/q6a2"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atlantic Ocean" />
+
+                <RadioButton
+                    android:id="@+id/q6a3"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Arctic Ocean" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q7"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7-Where can you find the Stonehenge?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/q7a1"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Australia" />
+
+                <RadioButton
+                    android:id="@+id/q7a2"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="England" />
+
+                <RadioButton
+                    android:id="@+id/q7a3"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="China" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q8"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8-A triangle with none of its sides of equal length is called __________." />
+
+
+            <EditText
+                android:id="@+id/q8a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter th answer here"
+                android:textAllCaps="true"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/q9"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9-What is a group of fish called?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/q9a1"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A gaggle" />
+
+                <RadioButton
+                    android:id="@+id/q9a2"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A school" />
+
+                <RadioButton
+                    android:id="@+id/q9a3"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A herd" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q10"
+                style="@style/QText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" 10-What is the biggest planet in our solar system?" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/q10a1"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jupiter" />
+
+                <RadioButton
+                    android:id="@+id/q10a2"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pluto" />
+
+                <RadioButton
+                    android:id="@+id/q10a3"
+                    style="@style/BText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Earth" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="158dp"
+        android:layout_height="41dp"
+        android:text="SUBMIT"
+        android:textColor="#000000"
+        android:onClick="submitAnswers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
